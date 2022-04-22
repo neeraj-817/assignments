@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: beige;
+    }
+    #root{
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    <div id='root'> home</div>
+<div  id='blue-white'>about</div>
+    <p> i am pragraph without class </p>
+    <p class='blue-white'>i am pragraph with class</p>
+   
+</body>
+<script>
+      const mEnter=document.getElementById('root');
+       mEnter.addEventListener('mouseover',()=>{
+           mEnter.style.color='red';
+       });
+
+       const mOver=document.querySelector('.blue-white')
+       mOver.addEventListener('mouseover',()=>{
+        mOver.style.color='white';
+        mOver.style.backgroundColor='blue';
+       });
+
+       const mFont=document.querySelector('p')
+       mFont.addEventListener('mouseover',()=>{
+        mFont.style.fontSize='50px';
+       });
+
+      
+</script>
+</html>
